@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Search from "../views/Search.vue";
-import User from "../views/User.vue";
+import SearchView from "../views/SearchView/index.vue";
+import UserView from "../views/UserView.vue";
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -8,12 +8,12 @@ const router = createRouter({
     {
       path: "/",
       name: "search",
-      component: Search,
+      component: SearchView,
     },
     {
       path: "/users/:id",
       name: "user",
-      component: User,
+      component: UserView,
     },
   ],
 });
